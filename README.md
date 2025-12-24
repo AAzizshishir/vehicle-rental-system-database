@@ -41,7 +41,7 @@ booking_id, user_id, vehicle_id, rental_start_date, rental_end_date, booking_sta
 
 ## Queries
 
-### 1.Retrieve booking information along with: -- Customer name, Vehicle name
+### 1.Retrieve booking information along with: Customer name, Vehicle name
 
 SELECT b.booking_id, u.customer_name, v.vehicle_name, b.rental_start_date, b.rental_end_date, b.booking_status FROM bookings b INNER JOIN users u ON b.user_id = u.user_id INNER JOIN vehicles v ON b.vehicle_id = v.vehicle_id
 
